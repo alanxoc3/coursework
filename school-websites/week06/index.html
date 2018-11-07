@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CS 213 Week 06 Ponder and Prove</title>
+    <style type="text/css">
+	  form, pre {
+		  margin-left:20px; 
+		  font-family:Verdana, Geneva, sans-serif; 
+          padding:6px;
+          width: 550px;
+          font-size: 12;
+	      border: 1px solid rgb(0, 90, 136); 
+          border-radius: 4px;
+	  }
+	  h2 {
+		  border-bottom-style: solid;
+	  }
+	</style>
+   <script src="week06script.js"></script>
+  </head>
+  
+<body>
+	<p style="text-align:center">Back to home? <a href="../index.html">Click Here</a></p>
+	<hr />
+    <!-- First problem: Age -->
+	<h2>#1: Age</h2>
+    <p>Please indicate your age: 0-118 years</p>
+    <form action="" id="form1">
+ 	  <table>
+        <tr>
+          <td>
+            <input oninput="test1('ageIn1', 'ageOut1')" id="ageIn1" size="3"/>
+          </td>
+          <td><span id="ageOut1" style='color:red'>Invalid Age</span></td>
+        </tr>
+        <tr>
+          <td>
+            <input oninput="test1('ageIn2', 'ageOut2')" id="ageIn2" size="3"/>
+          </td>
+          <td><span id="ageOut2" style='color:red'>Invalid Age</span></td>
+        </tr>
+      </table>
+    </form>
+    
+    <!-- Second problem: SSN -->
+	<h2>#2: SSN</h2>
+    <p>Please enter a Social Security Number: 000-00-0000</p>
+    <form action="" id="form2">
+      <table>
+        <tr>
+          <td>
+             <input oninput="test2('ssIn1', 'ssOut1')" id="ssIn1" size="11"/>
+          </td>
+          <td><span id="ssOut1" style='color:red'>Invalid SSN</span></td>
+        </tr>
+        <tr>
+          <td>
+             <input oninput="test2('ssIn2', 'ssOut2')" id="ssIn2" size="11"/>
+          </td>
+          <td><span id="ssOut2" style='color:red'>Invalid SSN</span></td>
+        </tr>
+      </table>
+    </form>
+    
+    <!-- Third problem: Credit Card Number -->
+	<h2>#3: Credit Card Number</h2>
+    <p>Please enter a credit card number: 0000 0000 0000 0000</p>
+    <form action="" id="form3">
+      <table>
+        <tr>
+          <td>
+              <input size="19" oninput="test3('ccIn1', 'ccOut1')" id="ccIn1"/>
+          </td>
+          <td><span style='color:red' id="ccOut1">Invalid credit card number</span></td>
+        </tr>
+        <tr>
+          <td>
+              <input size="19" oninput="test3('ccIn2', 'ccOut2')" id="ccIn2"/>
+          </td>
+          <td><span style='color:red' id="ccOut2">Invalid credit card number</span></td>
+        </tr>
+      </table>
+    </form>
+    
+    <!-- Fourth problem: Date -->
+	<h2>#4: Date</h2>
+    <p>Please enter a date: m/d/yyyy</p>
+    <form action="" id="form4">
+      <table>
+        <tr>
+          <td>
+             <input oninput="test4('dIn1', 'dOut1')" id="dIn1" size="9" />
+          </td>
+          <td><span id="dOut1" style='color:red'>Invalid date</span></td>
+        </tr>
+        <tr>
+          <td>
+             <input oninput="test4('dIn2', 'dOut2')" id="dIn2" size="9" />
+          </td>
+          <td><span id="dOut2" style='color:red'>Invalid date</span></td>
+        </tr>
+      </table>
+    </form>
+    
+    <!-- Fifth problem: Abbreviation -->
+	<h2>#5: State Abbreviation</h2>
+    <p>Please enter a 2-letter state abbreviation</p>
+    <form action="" id="form5">
+      <table>
+        <tr>
+          <td>
+              <input oninput="test5('saIn1', 'saOut1')" id="saIn1" size="2" />
+          </td>
+          <td ><span style='color:red' id="saOut1">Invalid state abbreviation</span></td>
+        </tr>
+        <tr>
+          <td>
+              <input oninput="test5('saIn2', 'saOut2')" id="saIn2" size="2" />
+          </td>
+          <td ><span style='color:red' id="saOut2">Invalid state abbreviation</span></td>
+        </tr>
+      </table>
+    </form>
+
+    <!-- Sixth problem: Money  -->
+	<h2>#6: Dollar Amount</h2>
+    <p>Please enter an amount in US dollars</p>
+    <form action="" id="form6">
+      <table>
+        <tr>
+          <td>
+              <input oninput="test6('daIn1', 'daOut1')" id="daIn1" size="10" />
+          </td>
+          <td><span style='color:red' id="daOut1">Invalid money amount</span></td>
+        </tr>
+        <tr>
+          <td>
+              <input oninput="test6('daIn2', 'daOut2')" id="daIn2" size="10" />
+          </td>
+          <td><span style='color:red' id="daOut2">Invalid money amount</span></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

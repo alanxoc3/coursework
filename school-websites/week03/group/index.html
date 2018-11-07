@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <style> /* #0 */
+
+		div.document {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+
+		div#title, #menuBar,  #menuBar ul {
+			width: 50%;
+			position: relative;
+			margin: auto;
+			text-align: center;
+			font-weight: bold;
+			font-style: oblique;
+			list-style-type: none;
+			background-color: red;
+			padding: 10px;
+		}
+
+		div#text {
+			position: absolute;
+			padding 5px;
+			margin-left: 0px;
+			margin-right: 20%;
+			text-align: justify;
+		}
+
+		div#sidebar{
+			position: absolute;
+			padding 5px;
+			margin-left: 82%;
+			margin-right: 10px;
+			text-align: justify;
+		}
+
+		div#bottom {
+			position: absolute;
+			padding: 5px;
+			text-align: center;
+			bottom: 0px;
+		}
+
+	</style>
+
+    <style> /* #1 */
+
+		body {
+			font-size: 20px;
+			text-align: center;
+			width: 75%;
+			left:0px;
+			background-color: grey;
+		}
+
+		#title {
+			font-family: Georgia, serif;
+			color: red;
+			font-size: 30;
+		}
+
+		div#menuBar {
+			position: fixed;
+			right: 0px;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+	</style>
+
+    <style> /* #2 */
+
+	   body {
+			text-align: left;
+			background-color: #444444;
+			font-family: monospace;
+		}
+
+		div.document {
+			margin: auto;
+			padding: 7px;
+			width: 40%;
+			text-align: justify;
+			background-color: #DDDDFF;
+
+		}
+
+	</style>
+
+    <style> /* #3 */
+
+		body {
+			background-color: pink;
+			font-family: serif;
+		}
+
+		div.document {
+			background-color: cyan;
+			padding: 25px;
+		}
+
+		ul {
+			list-style-type: square;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			color: green;
+		}
+
+		a:link {
+			color: blue;
+		}
+
+		a:visited{
+			color: orange;
+		}
+
+		a:hover {
+			color: red;
+		}
+
+		a:active{
+			color: yellow;
+		}
+
+		li:hover {
+			background-color: green;
+		}
+
+	</style>
+
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Week 03 : CSS</title>
+
+   </head>
+
+   <body>
+
+      <div class="document">
+
+        <div id="title">
+
+          <h1>Week 03 : CSS</h1>
+
+          <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+
+        </div> <!--title -->
+
+        <div class="content">
+
+          <div id="menuBar">
+
+            <ul id="menuBarList">
+
+              <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+
+              <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+
+              <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+
+              <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+
+              <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+
+            </ul>
+
+          </div> <!-- menuBar -->
+
+          <div id="text">
+
+            <h1>Select the Stylesheet</h1>
+
+            <p>There are four stylesheets that you may select from. Each one will change the coloring, fonts, 
+
+            		and even the layout of the page.You can change the layout of this page by selecting different 
+
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+
+              <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+
+              <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+
+              <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+
+              <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
+
+            </p>
+
+             <h1>Instructions</h1>
+
+            <p>Please modify this page to include a description of each stylesheet, including anything clever that 
+
+            		you did to achieve a given effect. Please also include the contributors to a given stylesheet.</p>
+
+         </div> <!-- text -->
+
+         <div id="sidebar">
+
+           <h3>Grading</h3>
+
+            <p>In order to get full credit for this assignment, you will need to demonstrate what you have learned 
+
+            		and how you helped your classmates. This means your contribution needs to be briefly described 
+
+                    on the page.</p>
+
+          </div> <!--sidebar -->
+
+        </div> <!-- content -->
+
+        <div id="bottom">Submit this assignment by </div>
+
+      </div> <!-- document -->
+
+      
+
+      <script>
+
+	    <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+
+	    function disableStyles() 
+
+		{
+
+		  document.styleSheets[0].disabled = true;
+
+		  document.styleSheets[1].disabled = true;
+
+		  document.styleSheets[2].disabled = true;
+
+		  document.styleSheets[3].disabled = true;
+
+		}
+
+		<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+
+		function applyStyle(i)
+
+		{
+
+			disableStyles();
+
+			document.styleSheets[i].disabled = false;
+
+		}
+
+	  </script>
+
+   </body>
+
+</html>

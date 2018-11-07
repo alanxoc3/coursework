@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Code_Space | Shopping</title>
+		<link rel='stylesheet' type='text/css' href='code_space_style.css'>
+	</head>
+
+	<body>
+	<div id='content'>
+		<img id='banner' src='codeSpace.png' alt="CODE SPACE LOGO"/>
+		<div class='navbar' id='navbar_1'>
+			<a class="nav_link" id="nav_left_1"  href="../index.html" style="position: absolute; left: 0px;">< BACK TO SITE</a>
+			<a class="nav_link" id="nav_right_1" href="#"             style="position: absolute; right: 0px;" onclick="firstSubmit()">PROCEED TO CHECKOUT ></a>
+		</div>
+		<div class='navbar' id='navbar_2'>
+			<a class="nav_link" id="nav_left_1"  href="#" style="position: absolute; left: 0px;"  onclick="backToStart()">< BACK TO ORDER</a>
+		</div>
+
+		<p id="error_text">&nbsp</p>
+
+		<div id="products">
+			<table>
+				<tr>
+					<td><p class="item_name" id="shirt_name"  >T-SHIRT</p></td>
+					<td><p class="item_name" id="mug_name"    >MUG</p></td>
+					<td><p class="item_name" id="tie_name"    >TIE</p></td>
+					<td><p class="item_name" id="frisbee_name">FRISBEE</p></td>
+				</tr>
+				<tr>
+					<td><img class="icon" src="tshirt.png" alt="T-Shirt Icon"/></td>
+					<td><img class="icon" src="mug.png" alt="T-Shirt Icon"/></td>
+					<td><img class="icon" src="tie.png" alt="T-Shirt Icon"/></td>
+					<td><img class="icon" src="frisbee.png" alt="T-Shirt Icon"/></td>
+				</tr>
+				<tr>
+					<td><p class="item_price" id="shirt_price">$10</p></td>
+					<td><p class="item_price" id="mug_price">$10</p></td>
+					<td><p class="item_price" id="tie_price">$10</p></td>
+					<td><p class="item_price" id="frisbee_price">$10</p></td>
+				</tr>
+				<tr>
+					<td><input class="item_button" id="shirt_button"   name="icon_button" type="button" value="BUY" onclick="orderProduct('shirt_num')"></td>
+					<td><input class="item_button" id="mug_button"     name="icon_button" type="button" value="BUY" onclick="orderProduct('mug_num')"></td>
+					<td><input class="item_button" id="tie_button"     name="icon_button" type="button" value="BUY" onclick="orderProduct('tie_num')"></td>
+					<td><input class="item_button" id="frisbee_button" name="icon_button" type="button" value="BUY" onclick="orderProduct('frisbee_num')"></td>
+				</tr>
+				<tr>
+					<td><input class="item_text" id="shirt_num"   name="icon_button" type="number" value="0" oninput="updatePrice('shirt_num','shirt_price')"></td>
+					<td><input class="item_text" id="mug_num"     name="icon_button" type="number" value="0" oninput="updatePrice('mug_num','mug_price')"></td>
+					<td><input class="item_text" id="tie_num"     name="icon_button" type="number" value="0" oninput="updatePrice('tie_num','tie_price')"></td>
+					<td><input class="item_text" id="frisbee_num" name="icon_button" type="number" value="0" oninput="updatePrice('frisbee_num','frisbee_price')"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="order">
+			<table style="text-align: center; position: relative; width: 100%;">
+				<tr>
+					<td class='item_total' id='shirt_total'></td>
+					<td>+</td>
+					<td class='item_total' id='mug_total'></td>
+					<td>+</td>
+					<td class='item_total' id='tie_total'></td>
+					<td>+</td>
+					<td class='item_total' id='frisbee_total'></td>
+					<td>=</td>
+				</tr>
+			</table>
+			<h1 id='all_total'></h1>
+			<hr />
+			<br />
+			<p style="text-align: center">Alright, your order is almost complete, we just need a little info...</p>
+			<form name="order_form" action="" onsubmit="validateForm()">
+				<table style="position: relative; width: 100%;">
+					<tr>
+						<td>
+						Credit Card Company:<br />
+						<input type="radio" name="card_company" value="visa" checked>Visa<br />
+						<input type="radio" name="card_company" value="master_card">Master Card<br />
+						<input type="radio" name="card_company" value="american_express">American Express<br /><br /><br />
+						Credit Card Number:<br />
+						<input type="text"  id="card_number" name="card_number"  value="" onblur="validateForm(); validateCardNumber('card_number')"><br /><br />
+						Credit Card Expiration Date:<br />
+						<input type="text"  id="card_expiration" value="" name="card_expiration" onblur="validateForm(); validateCardDate('card_expiration')"><br /><br />
+						</td>
+
+						<td>
+						Name:<br /><input id="enter_name" type="text" name="enter_name" onblur="validateForm(); validateName('enter_name')"><br /><br />
+						Address:<br /><input id="enter_addr" type="text" name="enter_addr" onblur="validateForm(); validateAddress('enter_addr')"><br /><br />
+						Phone #:<br /><input id="enter_phone" type="text" name="enter_phone" onblur="validateForm(); validatePhone('enter_phone')"><br /><br /><br />
+						</td>
+					</tr>
+				</table>
+				<input type="reset" value="Reset Everything!">
+				<input type="submit" value="Submit Everything!">
+			</form>
+		</div>
+		<div id='footer'>
+			<p>CODE_SPACE is a non-profit organization. This website is open source, under the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GNU Public License</a></p>
+		</div>
+	</div>
+	<script src='code_space_script.js'></script>
+	</body>
+</html>

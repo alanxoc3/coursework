@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Week 10 - AJAX</title>
+	</head>
+
+	<body>
+		<p style="text-align:center">Back to home? <a href="../index.html">Click Here</a></p>
+		<hr />
+	   <h1 style="text-align: center;">AJAX TEST</h1>
+		<div style="width: 50%; position: absolute; left: 0px;">
+      	<button type="button" onclick="loadText('usa.txt')">USA</button>
+      	<button type="button" onclick="loadText('mexico.txt')">Mexico</button>
+      	<button type="button" onclick="loadText('russia.txt')">Russia</button>
+      	<button type="button" onclick="loadText('canada.txt')">Canada</button>
+			<br />
+	   	<p id="display-area"></p>
+		</div>
+		<div style="width: 50%; position: absolute; right: 0px;">
+			<input type="text" id="text-area" name="text-area" value="json.txt"/>
+  			<button type="button" onclick="loadJSON()">Parse File</button>
+			<p id="display-json"></p>
+		</div>
+
+<script>
+
+// Parses a JSON file.
+function parseJSON(file) {
+	var area = document.getElementById("text-area").value;
+	var display = document.getElementById("display-json");
+	var parser = JSON.parse(file);
+	var count;
+
+	display.innerHTML = "";
+
+	for (var count = 0; count < parser.students.length; count++) {
+		// Set variables.
+		var first = parser.students[count].first;
+		var last = parser.students[count].last;
+		var address = parser.students[count].address;
+		var city = address.city;
+		var place = address.state;
+		var zip = address.zip;
+		var major = parser.students[count].major;
+		var gpa = parser.students[count].gpa;
+		var space = "<br />" + "&nbsp&nbsp&nbsp&nbsp&nbsp";
+
+		display.innerHTML += first + " " + last
+			+ space + "Lives in " + city + ", " + place + " " + zip + "."
+			+ space + "Maintains a " + gpa + " GPA."
+			+ space + "Majoring in " + major + "." + "<br />";
+
+	
+	}
+
+}
+
+// Parses the JSON file.
+function displayArea(list) {
+	var it;
+	var area = document.getElementById("display-area");
+	area.innerHTML = "";
+	for (it in list) {
+		area.innerHTML += list[it] + "<br/>";
+	}
+}
+
+// Loads the JSON file and parses it.
+function loadJSON(file) {
+  var xhttp = new XMLHttpRequest();
+  var area = document.getElementById("display-json");
+  var file = document.getElementById("text-area").value;
+  var content;
+
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+		content = xhttp.responseText;
+		parseJSON(content);
+    } else {
+      area.innerHTML = xhttp.readyState + " " + xhttp.status;
+    }
+  };
+
+  xhttp.open("GET", file, true);
+  xhttp.send(); 
+}
+
+// Loads the file you give it and displays the file by line.
+function loadText(file) {
+  var xhttp = new XMLHttpRequest();
+  var area = document.getElementById("display-area");
+
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      var list;
+      list = xhttp.responseText.split("\n");
+		displayArea(list);
+    } else {
+      area.innerHTML = xhttp.readyState + " " + xhttp.status;
+    }
+  };
+
+  xhttp.open("GET", file, true);
+  xhttp.send(); 
+}
+
+</script>
+
+	</body>
+</html>

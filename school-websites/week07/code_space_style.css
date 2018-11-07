@@ -1,0 +1,130 @@
+body {
+	background-color: #1a1a1a;
+	color: #afe9af;
+	font-family: Sans-Serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#banner {
+	width: 100%;
+	height: auto;
+}
+
+#content {
+	position: absolute;
+	left: 10%;
+	right: 10%;
+	top: 0px;
+}
+
+#products {
+	display: block;
+}
+
+#order {
+	display: none;
+}
+
+.navbar {
+	width: 100%;
+	height: 30px;
+	font-size: 13px;
+}
+
+#navbar_1 {
+	display: block;
+}
+
+#navbar_2 {
+	display: none;
+}
+
+.nav_link:hover {
+	font-size: 105%;
+}
+
+#error_text {
+	color: #ff2121;
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+
+a:link {
+	color: #afe9af;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #afe9af;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #5fbcd3;
+	text-decoration: none;
+}
+
+a:active {
+	color: #5fbcd3;
+	text-decoration: none;
+}
+
+.icon {
+	width: 100%;
+	height: auto;
+	background-image: url("iconBkgd.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.icon:hover {
+	background-image: url("iconBkgd_dark.png");
+}
+
+td {
+	padding-top:   5px;
+	padding-left:  15px;
+	padding-right: 15px;
+}
+
+table, tr {
+	border-style: none;
+	padding: 0px;
+}
+
+#footer {
+	text-align: center;
+	font-size: 10px;
+}
+
+.item_total {
+	font-size: 30px;
+	text-align: center;
+}
+
+#all_total {
+	font-size: 60px;
+	text-align: center;
+}
+
+.item_name {
+	text-align: center;
+}
+
+.item_price {
+	text-align: center;
+}
+
+.item_button {
+	width: 100%;
+}
+
+.item_text {
+	visibility: hidden;
+	position: relative;
+	width: 50%;
+	left: 25%;
+	right: 25%;
+}

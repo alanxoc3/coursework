@@ -1,0 +1,192 @@
+body {
+	background-color: #f8f8f8;
+	text-color: #000000;
+}
+
+h1 {
+	font: bold 50px 'Gloria Hallelujah', cursive;
+	text-align: center;
+	text-color: #000000;
+}
+
+p#center {
+	text-align: center;
+}
+
+.icons {
+	margin: auto;
+}
+
+img#banner {
+	min-width:30px;
+	width:100%;
+	display:block;
+}
+
+div.content_container {
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	top: 0px;
+	padding: 0px;
+	/*border: 1px solid #000000;*/
+	border-right: 0px;
+	background-color: #f8f8f8;
+}
+
+div.content {
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: justify;
+	font: 17px Georgia;
+	text-color: #000000;
+}
+
+div.footer {
+	position: relative;
+	font: 10px Arial;
+	bottom:0px;
+	text-align: center;
+	text-color: #000000;
+}
+
+.circle_pencil {
+	position: relative;
+	display: block;
+	background: url('circle_pencil.png') no-repeat;
+	background-position: center;
+	width: 150px;
+	height: 150px;
+	background-size: 100% 100%;
+}
+
+.circle_pencil:hover {
+	background-image: url('circle_pencil_invert.png');
+}
+
+.circle_tshirt {
+	position: relative;
+	display: block;
+	background: url('circle_tshirt.png') center no-repeat;
+	width: 150px;
+	height: 150px;
+	background-size: 100% 100%;
+}
+
+.circle_tshirt:hover {
+	background-image: url('circle_tshirt_invert.png');
+}
+
+.circle_sharpener {
+	position: relative;
+	display: block;
+	background: url('circle_sharpener.png') center no-repeat;
+	width: 150px;
+	height: 150px;
+	background-size: 100% 100%;
+}
+
+.circle_sharpener:hover {
+	background-image: url('circle_sharpener_invert.png');
+}
+
+div.navbar {
+	padding: 10px;
+}
+
+div.navbar table {
+	margin: auto;
+}
+
+.pencil_invert {
+	position: relative;
+	display: block;
+	background: url('pencil_invert.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #363636;
+}
+
+.tshirt_invert {
+	position: relative;
+	display: block;
+	background: url('tshirt_invert.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #363636;
+}
+
+.sharpener_invert {
+	position: relative;
+	display: block;
+	background: url('sharpener_invert.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #363636;
+}
+
+.pencil {
+	position: relative;
+	display: block;
+	background: url('pencil.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #c9c9c9;
+}
+
+.pencil:hover {
+	position: relative;
+	display: block;
+	background: url('pencil_invert.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #363636;
+}
+
+.tshirt {
+	position: relative;
+	display: block;
+	background: url('tshirt.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #c9c9c9;
+}
+
+.tshirt:hover {
+	position: relative;
+	display: block;
+	background: url('tshirt_invert.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #363636;
+}
+
+.sharpener {
+	position: relative;
+	display: block;
+	background: url('sharpener.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #c9c9c9;
+}
+
+.sharpener:hover {
+	position: relative;
+	display: block;
+	background: url('sharpener_invert.png') center no-repeat;
+	width: 64px;
+	height: 64px;
+	background-size: 100% 100%;
+	background-color: #363636;
+}

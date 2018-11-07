@@ -1,0 +1,105 @@
+body {
+	background-color: #805c15;
+	text-color: #553900;
+}
+
+h1 {
+	font: bold 50px;
+	text-align: center;
+	text-color: #553900;
+}
+
+img#banner {
+	min-width:30px;
+	width:100%;
+	display:block;
+
+	/*For pixelated banner*/
+	image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: pixelated;
+	image-rendering: optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+}
+
+div.content_container {
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 0px;
+	padding: 0px;
+	border: 1px solid #553900;
+	border-right: 0px;
+	background-color: #d4b16a;
+}
+
+div.content {
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: justify;
+	font: 17px Georgia;
+	text-color: #553900;
+}
+
+div.footer {
+	position: relative;
+	font: 10px Arial;
+	bottom:0px;
+	text-align: center;
+	text-color: #553900;
+}
+
+div.navbar {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 75%;
+	bottom: 0px;
+	
+	background-color: #aa8435;
+	padding: 10px;
+	border: 1px solid #553900;
+	text-align: center;
+	font: 40px Impact, Charcoal, sans-serif;
+	font-weight: 900;
+}
+
+div.navbar>table {
+	height: 100%;
+	width: 100%;
+}
+
+div.navbar a:link {
+	color: #553900;
+	text-decoration: none;
+}
+
+div.navbar a:visited {
+	color: #553900;
+	text-decoration: none;
+}
+
+div.navbar a:hover {
+	color: #805c15;
+	text-decoration: none;
+}
+
+div.navbar a:active {
+	color: #553900;
+	text-decoration: none;
+}
+
+div.navbar tr:hover {
+	background-color: #d4b16a;
+}
+
+div.navbar tr#curpage {
+	font-color: #553900;
+	text-decoration: none;
+	background-color: #d4b16a;
+}

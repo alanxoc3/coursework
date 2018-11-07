@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bsa SYSTEM "bsa.dtd">
+<bsa>
+	<council name="Black Warrior Council">
+		<troop name="Red Tigers" number="003">
+			<scout>
+				<first_name>Roy</first_name>
+				<last_name>McLenan</last_name>
+				<address>
+					<street>123 Selma Blvd</street>
+					<city>Selma</city>
+					<state>Alabama</state>
+				</address>
+				<phone>3343324325</phone>
+				<rank date_earned="01/02/12">1stClass</rank>
+				<rank date_earned="01/02/11">2stClass</rank>
+				<rank date_earned="01/02/10">Tenderfoot</rank>
+				<merit_badge date_earned="07/04/15">Art</merit_badge>
+				<merit_badge date_earned="07/05/15">Nature</merit_badge>
+				<merit_badge date_earned="08/14/15">Nuclear Science</merit_badge>
+				<merit_badge date_earned="12/04/15">Music</merit_badge>
+			</scout>
+			<scout>
+				<first_name>Dot</first_name>
+				<last_name>Harmon</last_name>
+				<address>
+					<street>123 Pine Hill Rd</street>
+					<city>Thomaston</city>
+					<state>Alabama</state>
+				</address>
+				<phone>3341553235</phone>
+				<rank date_earned="01/02/15">Eagle</rank>
+				<rank date_earned="01/02/14">Life</rank>
+				<rank date_earned="01/02/13">Star</rank>
+				<rank date_earned="01/02/12">1stClass</rank>
+				<rank date_earned="01/02/11">2stClass</rank>
+				<rank date_earned="01/02/10">Tenderfoot</rank>
+				<merit_badge date_earned="07/04/15">Art</merit_badge>
+				<merit_badge date_earned="07/05/15">Nature</merit_badge>
+				<merit_badge date_earned="08/14/15">Nuclear Science</merit_badge>
+				<merit_badge date_earned="12/04/15">Music</merit_badge>
+				<merit_badge date_earned="12/14/13">Camping</merit_badge>
+			</scout>
+			<scout>
+				<first_name>Knabo</first_name>
+				<last_name>Komencanto</last_name>
+				<address>
+					<street>12432 County Road 32</street>
+					<city>Pine Hill</city>
+					<state>Alabama</state>
+				</address>
+				<phone>3341111111</phone>
+			</scout>
+		</troop>
+		<troop name="White Bears" number="006">
+			<scout>
+				<first_name>Todd</first_name>
+				<last_name>Mcgraw</last_name>
+				<address>
+					<street>12 3rd St</street>
+					<city>Greensboro</city>
+					<state>Alabama</state>
+				</address>
+				<phone>3342222222</phone>
+				<rank date_earned="01/02/10">Tenderfoot</rank>
+				<merit_badge date_earned="1/1/15">Music</merit_badge>
+			</scout>
+		</troop>
+	</council>
+	<council name="Greater Alabama Council">
+		<troop name="White Bears" number="006">
+			<scout>
+				<first_name>Bobby</first_name>
+				<last_name>Polhill</last_name>
+				<address>
+					<street>31 Crystal Ln</street>
+					<city>Mountain Brook</city>
+					<state>Alabama</state>
+				</address>
+				<phone>3341234567</phone>
+				<rank date_earned="01/02/14">Life</rank>
+				<rank date_earned="01/02/13">Star</rank>
+				<rank date_earned="01/02/12">1stClass</rank>
+				<rank date_earned="01/02/11">2stClass</rank>
+				<rank date_earned="01/02/10">Tenderfoot</rank>
+			</scout>
+			<scout>
+				<first_name>Hermon</first_name>
+				<last_name>Paulistanas</last_name>
+				<address>
+					<street>11238 Greensprings Blvd</street>
+					<city>Homewood</city>
+					<state>Alabama</state>
+				</address>
+				<phone>2569192934</phone>
+			</scout>
+		</troop>
+	</council>
+</bsa>
