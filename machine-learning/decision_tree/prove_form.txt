@@ -1,0 +1,126 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+1. Please provide a link to your classifier in your public GitHub repo.
+https://github.com/alanxoc3/machine-learning/tree/master/decision_tree
+
+2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
+So, the main thing that I think that I did differently from most other people,
+is that instead of taking the algorithm from the book, I went through some
+psuedo-code and wrote up my own algorithm. My algorithm included pruning as the
+tree was generating as well. Pretty proud of that.
+
+3. Briefly describe how you handled numeric data.
+The numeric data that was within Iris, I wrote up a quick program to break up
+each column into 3 separate classes. For example, the first column had three
+separate features of: 4.3, 5.4, 6.3
+
+Those numbers were chosen based on the total dataset, then the first third was
+everything from [4.3, 5.3). And so on. Then, using the values that I came up
+with, I just replaced the iris file.
+
+4. Briefly describe your you handled missing data.
+I didn't quite handle missing data, but I did handle missing values. I realized
+that if my algorithm was exposed to inputs that were not within the original
+training set, then my program crashed. I fixed that by displaying an error
+message saying that the results for the algorithm would be skewed. This was
+mainly a quick fix, due to procrastination. If I had more time, I am sure that
+I could come up with a better solution. But this solution does work and the
+percentages of getting the answer right are still pretty high (70s - high 80s).
+
+5. Describe your results for the Iris data set. (e.g., What was the size of the tree? How did your implementation compare to existing implementations? How did your decision tree compare to your kNN classifier)
+My implementation broke each feature up into only three discretized (even)
+parts, my results ended up being around 70s - 80s, percent.
+
+6. Include a textual representation of the tree your algorithm produced for the iris dataset.
+Where 0 = "sep_len"
+      1 = "sep_wid"
+      2 = "pet_len"
+      3 = "pet_wid"
+
+ Question Number: 3
+  Answer: 1.6
+   Question Number: 2
+    Answer: 4.9
+     Question Number: 1
+      Answer: 3.2
+       Question Number: 0
+        Answer: 5.4
+         Value:  1
+        Answer: 6.3
+         Value:  2
+        Answer: 4.3
+         Value:  0
+    Answer: 3.0
+     Value:  0
+
+7. Describe your results for the Lenses data set. (e.g., What was the size of the tree? How did your implementation compare to existing implementations?)
+Usually averages around 85%. I actually didn't test my implementation with
+existing implementations, due to time (I should stop procrastinating :). The
+max depth of my tree was about 3. The tree did get pruned, so that is good.
+
+8. Include a textual representation of the tree your algorithm produced for the Lenses dataset.
+where 0 = age
+      1 = spectacle
+      2 = astigmatic
+      3 = tear_rate
+ Question Number: 3
+  Answer: 2
+   Question Number: 2
+    Answer: 1
+     Value:  2
+    Answer: 2
+     Question Number: 1
+      Answer: 2
+       Value:  3
+      Answer: 1
+       Value:  1
+  Answer: 1
+   Value:  3
+
+
+9. Describe your results for the Voting data set. (e.g., What was the size of the tree? How did your implementation compare to existing implementations?)
+This one averaged around 76%. The reason why this one was lower, was because I
+was not handling missing data. I was treating the missing data as another
+value, for the most part.
+
+10. Include ___a portion of___ the representation of the tree your algorithm produced for the Voting dataset.
+Nah, I'll include the whole thing!!!!! Okay, I won't.
+ Question Number: 15
+  Answer: n
+   Question Number: 14
+    Answer: n
+     Question Number: 13
+      Answer: y
+       Question Number: 12
+        Answer: ?
+         Value:  republican
+        Answer: y
+         Question Number: 11
+          Answer: ?
+           Question Number: 0
+            Answer: n
+             Value:  republican
+            Answer: y
+             Value:  democrat
+          Answer: n
+           Value:  democrat
+
+That was some of it.
+
+11. If applicable, please describe anything you did to go above and beyond and the results you saw.
+I did do pruning, and I did create the algorithm completely by myself. It
+helped me understand it a lot more. It was a great learning experience. I did
+put effort into this assignment.
+
+12. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+D
+
+13. Provide a brief justification (1-2 sentences) for selecting that category.
+I say D, because there were only some experimentation requirements that I
+didn't meet, but I made up for that by pruning along with my tree creation.

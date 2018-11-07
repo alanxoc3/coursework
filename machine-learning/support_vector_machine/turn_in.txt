@@ -1,0 +1,48 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+https://github.com/alanxoc3/machine-learning/tree/master/support_vector_machine
+
+1. Please describe your experiment/results for the Vowel dataset. How many
+different parameters did you try? What was the highest accuracy you obtained,
+and what were the parameters that produced it?
+
+The highest accuracy that I obtained was around: 96.27%
+The values that I used were 1500 for the cost, and .001 for gamma.
+I tried like 7 or so different parameters, changing gamma as well as the cost.
+
+2. Please describe your experiment/results for the Letters dataset. How many
+different parameters did you try? What was the highest accuracy you obtained,
+and what were the parameters that produced it?
+
+The highest accuracy I obtained was around: 90.28%
+My gamma was .001 and my cost was 750
+I tried around seven or so, the higher cost values were doing worse, so I kept
+it at 750.
+
+3. Please describe your experiment/results for the Abalone dataset. How many
+different parameters did you try? What was the highest accuracy you obtained,
+and what were the parameters that produced it?
+
+One problem I had was that I wasn't rounding my output values, so I would get a
+0% accuracy every time.
+
+One I fixed that, my highest accuracy was about: 29.02%
+My parameters were .01 for gamma and 1900 for cost.
+
+4. Describe anything you did to go above and beyond the minimum standard
+requirements.
+
+Nothing.
+
+5. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+C
+
+6. Provide a brief justification (1-2 sentences) for selecting that category.
+
+I couldn't get above 29% with the abalone. Though my results were close.

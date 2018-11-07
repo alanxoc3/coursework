@@ -1,0 +1,49 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+1. Please list the 5 rules you found with the highest support.
+The lowest support was .047, the highest was .075
+	Other vegetables and whole milk.
+	Rolls/buns and whole milk.
+	Yogurt and whole milk.
+	Root vegetables and whole milk.
+	Root vegetables and other vegetables.
+
+2. Please list the 5 rules you found with the highest confidence.
+All of these implications produce a confidence of 1.
+	rice and sugar implies milk
+	canned fish and hygiene articles implies milk
+	root vegetables, butter, and rice implies milk
+	cream cheese, domestic eggs, and sugar implies milk
+	citrus fruit, soft cheese, and root vegetables implies other vegetables
+
+3. Please list the 5 rules you found with the highest lift.
+The highest of these lifts was 11.2, the lowest was 8.0.
+	liquor, red/blush wine
+	citrus fruit, other vegetables, soda, fruit/vegetable juice
+	tropical fruit, other vegetables, whole milk, yogurt, oil
+	citrus fruit, grapes, fruit/vegetable juice
+	other vegetables, whole milk, yogurt, rice 
+
+4. Please list the 5 rules you found that you think are the most interesting.
+The rules that I thought were interesting were.
+	Hard Cheese and oil usually meant someone would buy other vegetables.
+	Tropical Fruit, butter, and white bread usually meant someone was going to buy yogurt.
+	Whipped Cream, bakery products and napkins often meant someone would buy whole milk.
+	Pork, rolls, and waffles usually led to whole milk.
+	Tropical Fruit and herbs usually led to whole milk.
+
+5. Please describe anything else you did for this assignment
+Nothing else.
+
+
+6. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+D
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+Because I met the requirements, I did think it was interesting.

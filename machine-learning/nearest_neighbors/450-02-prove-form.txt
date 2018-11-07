@@ -1,0 +1,56 @@
+When your assignment is complete, please answer the questions in this text file
+and upload it to I-Learn.
+
+1. Please provide the URL of your public GitHub repository.
+	https://github.com/alanxoc3/iris-machine-learning
+
+2. Briefly describe your overall approach to the task and highlight the most
+difficult part of this assignment.
+	There were two difficult parts. One was understanding and implementing the
+	Knn algorithm. The other was figuring out a parsing bug that I had in my
+	program.
+
+3. Briefly describe how you handled the distance between nominal attributes.
+	I just changed them to sequential numbers. The nominal attributes in the car
+	data set seemed like they could easily be changed into sequential numbers (low,
+	med, high... etc). In the car data set, these sequences all ranged from 0 to 3
+
+4. Briefly describe your process for handling numeric data on different scales
+(i.e., normalizing).
+	I made the mins and the maxes line up. But only did so through the file parsing.
+	So the attributes that had only three possibilities, I gave 0, 1.5, and 3.
+	While the attributes that had four possibilities had 0, 1, 2, or 3.
+
+5. Describe your results for the Iris data set. (For example, what level of
+accuracy did you see for different values of K? How did your implementation
+compare to existing implementations?)
+	With a "k" of 1 and 3, the average was 92% accuracy. But with a "k" of 11, the
+	average was 95.5% accuracy.
+
+	That was taken from 10 runs for each k.
+
+6. Describe your results for the Car data set. (For example, what level of
+accuracy did you see for different values of K? How did your implementation
+compare to existing implementations?)
+	At first, I couldn't get above 35%, because I had a parsing bug. Once I
+	finally fixed the parsing bug, I was able to average about 70% to 80% with my
+	algorithm, changing the ks between 3 to 11.
+
+	But the algorithm from the sklearn was much better. It would get above 90%
+	on average.
+
+7. Describe anything you did to go above and beyond the minimum standard
+requirements.
+	I just did the minimum.
+
+8. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but signficantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+	C
+
+9. Provide a brief justification (1-2 sentences) for selecting that category.
+	So, the only thing that I didn't do was handling non-numeric data. I just
+	converted both the files into numbers, with ranges (using vim!!!).

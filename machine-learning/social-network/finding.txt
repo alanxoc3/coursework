@@ -1,0 +1,52 @@
+Alan Morgan
+
+When your assignment is complete, please answer the questions in this text file
+and upload it to I-Learn.
+
+1. For the blog dataset, list the nodes with the highest centrality (along with
+   the value you computed) for each of the following centrality measures:
+
+A) Degree Centrality:
+407 - momtobedby8.com
+
+B) Closeness Centrality:
+0.02341259 - winningreadings.blogspot.com
+
+C) Betweenness Centrality:
+60298.41 - momtobedby8.com
+
+2. For the Twitter dataset, list the nodes with the highest centrality (along
+   with the value you computed) for each of the following centrality measures:
+
+A) Degree Centrality:
+274 - momspark
+
+B) Closeness Centrality:
+04396242 - cttnrdgdesigns
+
+C) Betweenness Centrality:
+21233.56 - jugglingactmama
+
+3. Please describe your process for identifying these centrality measures.
+   (e.g., What software did you use?, What functions?, etc.)
+
+I used R, using the "centralization.degree, closeness, and betweenness"
+functions. I also used the "which.max" function to find where the max was.
+
+4. Please describe anything else you learned or did for this assignment (i.e.,
+   above and beyond requirements)
+
+I just did the requirements.
+
+5. Please select the category you feel best describes your assignment:
+A - Some attempt was made
+B - Developing, but significantly deficient
+C - Slightly deficient, but still mostly adequate
+D - Meets requirements
+E - Shows creativity and excels above and beyond requirements
+
+D
+
+6. Provide a brief justification (1-2 sentences) for selecting that category.
+
+I just completed the requirements, nothing special.

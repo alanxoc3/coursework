@@ -1,0 +1,31 @@
+Two popular distances are:
+Euclidean Distance and Manhattan distance
+
+Valid distance metrics must hold:
+	1. Non-negativivity.
+	2. The identity property.
+		If two things are the same, the distance must be 0.
+	3. Symmetry. d(x,y) = d(y,x)
+	4. Triangle inequality. d(x,z) <= d(x,y) + d(y,z)
+
+Beware of what biases you are introducing to an algorithm based on your
+assumptions you are making with your data.
+
+What is an algorithm that figures out terrorists is accurate 99.9% of the time?
+	return false.
+
+To figure out the accuracy, add all the numbers correct on top of the division,
+then all of the numbers are on the bottom of the division.
+
+To calculate error,
+	output = sigmoid( summation( weight_ij * input_ij ) )
+
+	delta or error, that is the name of this next one.
+	for output nodes
+	delta = output * (1 - output) * (output - what_it_should_have_been)
+
+	There is a different delta formula for the hidden nodes.
+
+	new_weight = weight - learning_rate * delta * input
+
+	sigmoid * (1 - sigmoid) * [summation of weight and deltas]

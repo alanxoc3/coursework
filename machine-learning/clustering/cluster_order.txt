@@ -1,0 +1,54 @@
+1 - Vermont 
+1 - Wyoming 
+1 - Colorado 
+1 - Hawaii 
+1 - Kansas 
+1 - Massachusetts 
+1 - Montana 
+1 - New Hampshire 
+1 - North Dakota 
+1 - Rhode Island 
+1 - Utah 
+1 - Wisconsin 
+1 - Nebraska 
+1 - Connecticut 
+1 - Oklahoma 
+1 - South Dakota 
+1 - Idaho 
+1 - Washington 
+1 - Oregon 
+1 - Delaware 
+1 - Minnesota 
+1 - Nevada 
+1 - Indiana 
+1 - Maine 
+1 - Iowa 
+
+2 - New Mexico 
+2 - Kentucky 
+2 - North Carolina 
+2 - West Virginia 
+2 - Arkansas 
+2 - Tennessee 
+
+3 - Alabama 
+3 - Louisiana 
+3 - Mississippi 
+3 - Georgia 
+3 - South Carolina 
+
+4 - Pennsylvania 
+4 - Texas 
+4 - Virginia 
+4 - Michigan 
+4 - New York 
+4 - Illinois 
+4 - Florida 
+4 - California 
+4 - Arizona 
+4 - Maryland 
+4 - Missouri 
+4 - New Jersey 
+4 - Ohio 
+
+5 - Alaska 
